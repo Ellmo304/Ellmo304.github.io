@@ -30,16 +30,7 @@ color: #fff;
 margin: 0;
 padding: 0;
 }
-h3 {
-/*font-family: Oswald;*/
-font-weight: normal;
-font-size: 16px;
-text-align: center;
-margin: 5px 0;
-padding: 0;
-z-index: 1;
-position: relative;
-}
+
 .center { margin: 0 auto; }
 .content{ margin: 0 auto; width: 960px; }
 .clear { clear: both; }
@@ -83,7 +74,7 @@ a:visited {
   margin-top: 110px;
 
 }
-#ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px; }
+/*#ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px; }*/
 
 
 #home, #aboutMe, #portfolio, #contact{ width: 100%; }
@@ -100,11 +91,11 @@ background-color: #fff;
 /*color: #333333;*/
 height: 300px;
 margin: 0 auto;
-overflow: hidden;
-padding: 200px 0;
+/*overflow: hidden;*/
+padding: 200px 0 260px 0;
 }
 #portfolio{
-background: 50% 0 no-repeat fixed;
+/*background: 50% 0 no-repeat fixed;*/
 /*color: #fff;*/
 height: 600px;
 padding: 170px 0 0 0;
