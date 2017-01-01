@@ -37,9 +37,13 @@ padding: 0;
 
 #header {
 width: 100%;
-background-color: white;
-color: black;
-border-bottom: 5px solid black;
+background: #2a148c; /* For browsers that do not support gradients */
+background: -webkit-linear-gradient(left, #2a148c , #7cf398); /* For Safari 5.1 to 6.0 */
+background: -o-linear-gradient(right, #2a148c, #7cf398); /* For Opera 11.1 to 12.0 */
+background: -moz-linear-gradient(right, #2a148c, #7cf398); /* For Firefox 3.6 to 15 */
+background: linear-gradient(to right, #2a148c, #7cf398); /* Standard syntax */
+color: white;
+border-bottom: 4px solid white;
 /*background: url('../img/header-bg.png');*/
 height: 80px;
 position: fixed;
@@ -58,9 +62,9 @@ margin-top: 9px;
 float: left;
 padding-left: 21px;
 }
-#nav li a { color: black; opacity:1; font-size: 16px; text-decoration: none; }
-#nav li a.active { color: blue; opacity:1; border-bottom: 2px solid blue; }
-#nav li a:hover { color: blue opacity:1; }
+#nav li a { color: white; opacity:1; font-size: 16px; text-decoration: none; }
+#nav li a.active { color: white; opacity:1; border-bottom: 2px solid white; }
+#nav li a:hover { color: skyblue; opacity:1; border-bottom: 2px solid skyblue; }
 
 a:visited {
   text-decoration: none;
@@ -108,21 +112,80 @@ height: 300px;
 padding: 200px 0;
 }
 
-
 @keyframes back-change {
-    0%   {background-color: red;}
-    10%  {background-color: orange;}
-    20%  {background-color: yellow;}
-    30%  {background-color: lime;}
-    40%  {background-color: darkgreen;}
-    50%  {background-color: blue;}
-    60%  {background-color: navy;}
-    70%  {background-color: purple;}
-    80% {background-color: brown;}
-    90% {background-color: black;}
-    100% {background-color: red;}
+    0%   {background-color: #2a148c;}
+    25%  {background-color: #7cf398; color: black;}
+    50%  {background-color: #2a148c; color: white;}
+    75%  {background-color: #000000;}
+    100%   {background-color: #2a148c;}
+
+}
+
+@keyframes imabg {
+  0% {background-image: url('../images/art.jpg');}
+  50% {background-image: url('http://www.studiocity-macau.com/uploads/images/SC/Entertainment/Batman/batman_share.jpg');}
+  100% {background-image: url('../images/art.jpg');}
 }
 
 #home {
-  animation: back-change 40s infinite ease-in-out;
+  animation: imabg 10s infinite ease-in-out;
+}
+
+
+
+backward {
+     display: inline-block;
+    -moz-transform: scale(-1, 1);
+    -webkit-transform: scale(-1, 1);
+    transform: scale(-1, 1);
+}
+
+
+
+
+@keyframes flip {
+  from {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -190deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -190deg);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -170deg);
+    transform: perspective(400px) rotate3d(0, 1, 0, -170deg);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  90% {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+
+  to {
+    -webkit-transform: perspective(400px);
+    transform: perspective(400px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+}
+
+#logo a {
+  margin-top: 7.5px;
+  padding: 10px;
+  border: 4px solid white;
+  border-radius: 50%;
+  color: white;
+  animation: flip 5s infinite ease-in-out;
+  /*animation: back-change 30s infinite ease-in-out;*/
 }
