@@ -87,7 +87,7 @@ a:visited {
 #home{
 background:url('../images/art.jpg') 50% 0 no-repeat fixed;
 /*color: #fff;*/
-height: 600px;
+height: 520px;
 margin: 0;
 padding: 200px 0 260px 0;
 background-size: cover;
@@ -95,13 +95,13 @@ background-size: cover;
 #aboutMe{
 background-color: #fff;
 /*color: #333333;*/
-min-height: 300px;
+min-height: 400px;
 margin: 0 auto;
 /*overflow: hidden;*/
 padding: 200px 0 260px 0;
 }
 #portfolio{
-background: black 50% 0 no-repeat fixed;
+background:url('../images/art.jpg') 50% 0 no-repeat fixed;
 color: #fff;
 height: 600px;
 padding: 170px 0 0 0;
@@ -200,7 +200,9 @@ backward {
   height: 320px;
   background: white;
   width: 46.5%;
-  border: 4px solid white;
+  box-shadow: 7px 7px 7px #111111;
+
+  border: 4px solid #2176ff;
   border-radius: 15px;
   display: inline-block;
   margin: 10px;
