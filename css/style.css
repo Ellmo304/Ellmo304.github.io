@@ -29,7 +29,7 @@ padding-bottom: 55px;
 }
 
 .center { margin: 0 auto; }
-.content{ width: 960px; }
+.content{margin: 0 auto; width: 960px; }
 .clear { clear: both; }
 
 #header {
@@ -95,14 +95,14 @@ background-size: cover;
 #aboutMe{
 background-color: #fff;
 /*color: #333333;*/
-height: 300px;
+min-height: 300px;
 margin: 0 auto;
 /*overflow: hidden;*/
 padding: 200px 0 260px 0;
 }
 #portfolio{
-/*background: 50% 0 no-repeat fixed;*/
-/*color: #fff;*/
+background: black 50% 0 no-repeat fixed;
+color: #fff;
 height: 600px;
 padding: 170px 0 0 0;
 background-size: cover;
@@ -142,7 +142,11 @@ backward {
     transform: scale(-1, 1);
 }
 
-
+.quotesContainer {
+  margin-top: -90px;
+  text-align: center;
+  padding-bottom: 120px;
+}
 
 
 @keyframes flip {
@@ -184,4 +188,49 @@ backward {
   color: white;
   animation: flip 5s infinite ease-in-out;
   /*animation: back-change 30s infinite ease-in-out;*/
+}
+
+.projectContainer {
+  width: 1100px;
+  margin: 0 auto;
+  margin-top: -135px;
+}
+
+.project {
+  height: 320px;
+  background: white;
+  width: 46.5%;
+  border: 4px solid white;
+  border-radius: 15px;
+  display: inline-block;
+  margin: 10px;
+  word-break: break-all;
+  overflow: hidden;
+}
+
+#project1 {
+  background-image: url('../images/battle.jpg');
+  background-size: cover;
+}
+
+#project2 {
+  background-image: url('../images/middle.jpg');
+  background-size: cover;
+}
+
+#project3 {
+  background-image: url('../images/itrack.jpg');
+  background-size: cover;
+}
+
+#project4 {
+  background-image: url('../images/myGarden.jpg');
+  background-size: cover;
+}
+
+div > img {
+  margin: 0 auto;
+  display: block;
+  border-radius: 15px;
+  width: 100%;
 }
