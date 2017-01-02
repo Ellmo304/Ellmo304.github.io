@@ -15,9 +15,9 @@ h1 {
 font-weight:800;
 font-size: 75px;
 text-align: center;
-text-shadow: 3px 3px 3px #333333;
+text-shadow: 5px 5px 5px #111111;
 color: #fff;
-margin-top: 200px;
+/*margin-top: 200px;*/
 padding: 0;
 }
 h2 {
@@ -25,10 +25,12 @@ h2 {
 font-weight: 800;
 font-size: 60px;
 text-align: center;
-text-shadow: 3px 3px 3px #333333;
+text-shadow: 5px 5px 5px #111111;
+
+/*text-shadow: 3px 3px 3px #333333;*/
 color: #fff;
 margin: 0;
-padding: 0;
+padding-bottom: 55px;
 }
 
 .center { margin: 0 auto; }
@@ -72,15 +74,10 @@ a:visited {
 }
 #text-box {
   background-color: rgba(0, 0, 0, 0.4);
-  background-size: cover;
+  box-shadow: 7px 7px 7px #111111;
   padding: 15px;
-  padding-right: 0px;
-  min-height: 1000px;
-  width: 100vw;
-  margin-left: -250px;
-  margin-top: -117px;
   border-radius: 15px;
-
+  margin-top: 50px;
 }
 /*#ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px; }*/
 
