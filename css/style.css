@@ -249,6 +249,12 @@ span >h4 > a:hover {
   text-decoration: none;
 }
 
+footer {
+  margin-top: 100px;
+  color: #2176ff;
+  text-align: center;
+}
+
 span > h4 > a {
   text-align: center;
   color: white;
