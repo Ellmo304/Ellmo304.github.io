@@ -1,5 +1,4 @@
 $(function() {
-  console.log('loaded biatch!');
   $('a[href*=#]').each(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'')
     && location.hostname == this.hostname
@@ -17,4 +16,11 @@ $(function() {
       }
     }
   });
+  $('.project').mouseover(function() {
+    $(this).children().css('visibility', 'visible');
+  }).mouseout(function() {
+    $(this).children().css('visibility', 'hidden');
+  });
+
+
 });
