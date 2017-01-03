@@ -68,7 +68,7 @@ a:visited {
   /*color: black;*/
 }
 #text-box {
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 7px 7px 7px #111111;
   margin: 0 auto;
   margin-top: 4vh;
@@ -251,7 +251,7 @@ span >h4 > a:hover {
 
 span > h4 > a {
   text-align: center;
-  color: blue;
+  color: white;
   font-size: 40px;
   text-decoration: none;
 }
