@@ -2,30 +2,30 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 body{
-margin: 0;
-padding: 0;
-color: black;
-width: 100%;
-background-color: white;
-font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: black;
+  width: 100%;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
 
 }
 h1 {
-font-weight:800;
-font-size: 75px;
-text-align: center;
-text-shadow: 5px 5px 5px #111111;
-color: #fff;
-padding: 0;
+  font-weight:800;
+  font-size: 75px;
+  text-align: center;
+  text-shadow: 5px 5px 5px #111111;
+  color: #fff;
+  padding: 0;
 }
 h2 {
-font-weight: 800;
-font-size: 60px;
-text-align: center;
-text-shadow: 5px 5px 5px #111111;
-color: #fff;
-margin: 0;
-padding-bottom: 55px;
+  font-weight: 800;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 5px 5px 5px #111111;
+  color: #fff;
+  margin: 0;
+  padding-bottom: 55px;
 }
 
 .center { margin: 0 auto; }
@@ -33,31 +33,31 @@ padding-bottom: 55px;
 .clear { clear: both; }
 
 #header {
-width: 100%;
-background: black; /* For browsers that do not support gradients */
-/*background: -webkit-linear-gradient(left, #2a148c , #7cf398); /* For Safari 5.1 to 6.0 */
-/*background: -o-linear-gradient(right, #2a148c, #7cf398); /* For Opera 11.1 to 12.0 */
-/*background: -moz-linear-gradient(right, #2a148c, #7cf398); /* For Firefox 3.6 to 15 */
-/*background: linear-gradient(to right, #2a148c, #7cf398); /* Standard syntax */
-color: white;
-border-bottom: 4px solid white;
-/*background: url('../img/header-bg.png');*/
-height: 80px;
-position: fixed;
-/*margin-top: 30px;*/
+  width: 100%;
+  background: black; /* For browsers that do not support gradients */
+  /*background: -webkit-linear-gradient(left, #2a148c , #7cf398); /* For Safari 5.1 to 6.0 */
+  /*background: -o-linear-gradient(right, #2a148c, #7cf398); /* For Opera 11.1 to 12.0 */
+  /*background: -moz-linear-gradient(right, #2a148c, #7cf398); /* For Firefox 3.6 to 15 */
+  /*background: linear-gradient(to right, #2a148c, #7cf398); /* Standard syntax */
+  color: white;
+  border-bottom: 4px solid white;
+  /*background: url('../img/header-bg.png');*/
+  height: 80px;
+  position: fixed;
+  /*margin-top: 30px;*/
 }
 #nav { width: 410px; float: right; margin-top: 20px; }
 #logo a {text-decoration: none; float: left; font-size: 30px; margin-top: 20px; font-weight: bold; }
 #nav ul{
-list-style: none;
-display: block;
-margin: 0 auto;
-list-style: none;
+  list-style: none;
+  display: block;
+  margin: 0 auto;
+  list-style: none;
 }
 #nav li{
-margin-top: 9px;
-float: left;
-padding-left: 21px;
+  margin-top: 9px;
+  float: left;
+  padding-left: 21px;
 }
 #nav li a { color: white; opacity:1; font-size: 16px; text-decoration: none; }
 #nav li a.active { color: #2176ff; opacity:1; }
@@ -65,7 +65,7 @@ padding-left: 21px;
 
 a:visited {
   text-decoration: none;
-  color: black;
+  /*color: black;*/
 }
 #text-box {
   background-color: rgba(0, 0, 0, 0.4);
@@ -79,67 +79,67 @@ a:visited {
   /*margin-left: 25%;
   margin-top: 2%;*/
 
-  }
+}
 /*#ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px; }*/
 
 
 #home, #aboutMe, #portfolio, #contact{ width: 100%; }
 #home{
-background:url('../images/3.jpg') 50% 0 no-repeat fixed;
-/*color: #fff;*/
-height: 520px;
-margin: 0;
-padding: 200px 0 260px 0;
-background-size: cover;
+  background:url('../images/3.jpg') 50% 0 no-repeat fixed;
+  /*color: #fff;*/
+  height: 520px;
+  margin: 0;
+  padding: 200px 0 260px 0;
+  background-size: cover;
 }
 #aboutMe{
-background-color: #fff;
-/*color: #333333;*/
-min-height: 400px;
-margin: 0 auto;
-/*overflow: hidden;*/
-padding: 200px 0 260px 0;
+  background-color: #fff;
+  /*color: #333333;*/
+  min-height: 400px;
+  margin: 0 auto;
+  /*overflow: hidden;*/
+  padding: 200px 0 260px 0;
 }
 #portfolio{
-background:url('../images/3.jpg') 50% 0 no-repeat fixed;
-color: #fff;
-height: 800px;
-padding: 170px 0 0 0;
-background-size: cover;
+  background:url('../images/3.jpg') 50% 0 no-repeat fixed;
+  color: #fff;
+  height: 800px;
+  padding: 170px 0 0 0;
+  background-size: cover;
 }
 #contact{
-background-color: #fff;
-/*color: #333333;*/
-height: 100px;
-padding: 200px 0;
+  background-color: #fff;
+  /*color: #333333;*/
+  height: 100px;
+  padding: 200px 0;
 }
 
 @keyframes back-change {
-    0%   {background-color: #2a148c;}
-    25%  {background-color: #7cf398; color: black;}
-    50%  {background-color: #2a148c; color: white;}
-    75%  {background-color: #000000;}
-    100%   {background-color: #2a148c;}
+  0%   {background-color: #2a148c;}
+  25%  {background-color: #7cf398; color: black;}
+  50%  {background-color: #2a148c; color: white;}
+  75%  {background-color: #000000;}
+  100%   {background-color: #2a148c;}
 
 }
 
 /*@keyframes imabg {
-  0% {background-image: url('../images/art.jpg');}
-  50% {background-image: url('http://www.studiocity-macau.com/uploads/images/SC/Entertainment/Batman/batman_share.jpg');}
-  100% {background-image: url('../images/art.jpg');}
+0% {background-image: url('../images/art.jpg');}
+50% {background-image: url('http://www.studiocity-macau.com/uploads/images/SC/Entertainment/Batman/batman_share.jpg');}
+100% {background-image: url('../images/art.jpg');}
 }*/
 
 /*#home {
-  animation: imabg 10s infinite ease-in-out;
+animation: imabg 10s infinite ease-in-out;
 }*/
 
 
 
 backward {
-     display: inline-block;
-    -moz-transform: scale(-1, 1);
-    -webkit-transform: scale(-1, 1);
-    transform: scale(-1, 1);
+  display: inline-block;
+  -moz-transform: scale(-1, 1);
+  -webkit-transform: scale(-1, 1);
+  transform: scale(-1, 1);
 }
 
 .quotesContainer {
@@ -211,6 +211,8 @@ backward {
   margin: 10px;
   word-break: break-all;
   overflow: hidden;
+  text-align: center;
+  color: white;
 }
 
 #project1 {
@@ -233,8 +235,32 @@ backward {
   background-size: cover;
 }
 
-#span1, #span2, #span3, #span4 {
+.span {
   visibility: hidden;
+}
+
+span >h4 > a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+span >h4 > a:hover {
+  color: #2176ff;
+  text-decoration: none;
+}
+
+span > h4 > a {
+  text-align: center;
+  color: blue;
+  font-size: 40px;
+  text-decoration: none;
+}
+
+span > h4 {
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 20px 20px 20px 20px;
+  margin-top: 35px;
+  border-radius: 15px;
 }
 
 
@@ -264,5 +290,5 @@ backward {
 }
 
 .contactIcon:hover {
-  animation: pulse 3s ease-in-out;
+  animation: pulse 2s ease-in-out;
 }
