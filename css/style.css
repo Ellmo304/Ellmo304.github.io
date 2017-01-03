@@ -167,7 +167,7 @@ backward {
     animation-timing-function: ease-out;
   }
 
-  60% {
+  40% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -170deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -170deg);
     -webkit-animation-timing-function: ease-in;
@@ -189,7 +189,7 @@ backward {
   border: 4px solid white;
   border-radius: 50%;
   color: white;
-  animation: flip 5s infinite ease-in-out;
+  animation: flip 3s infinite;
   /*animation: back-change 30s infinite ease-in-out;*/
 }
 
