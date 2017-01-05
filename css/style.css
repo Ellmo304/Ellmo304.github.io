@@ -34,17 +34,11 @@ h2 {
 
 #header {
   width: 100%;
-  background: black; /* For browsers that do not support gradients */
-  /*background: -webkit-linear-gradient(left, #2a148c , #7cf398); /* For Safari 5.1 to 6.0 */
-  /*background: -o-linear-gradient(right, #2a148c, #7cf398); /* For Opera 11.1 to 12.0 */
-  /*background: -moz-linear-gradient(right, #2a148c, #7cf398); /* For Firefox 3.6 to 15 */
-  /*background: linear-gradient(to right, #2a148c, #7cf398); /* Standard syntax */
+  background: black;
   color: white;
   border-bottom: 4px solid white;
-  /*background: url('../img/header-bg.png');*/
   height: 80px;
   position: fixed;
-  /*margin-top: 30px;*/
 }
 #nav { width: 410px; float: right; margin-top: 20px; }
 #logo a {text-decoration: none; float: left; font-size: 30px; margin-top: 20px; font-weight: bold; }
@@ -65,8 +59,8 @@ h2 {
 
 a:visited {
   text-decoration: none;
-  /*color: black;*/
 }
+
 #text-box {
   background-color: rgba(0, 0, 0, 0.3);
   box-shadow: 7px 7px 7px #111111;
@@ -76,17 +70,11 @@ a:visited {
   border-radius: 15px;
   height: 350px;
   width: 960px;
-  /*margin-left: 25%;
-  margin-top: 2%;*/
-
 }
-/*#ribbon { background: url('../img/ribbon.png')no-repeat; width: 251px; height: 48px; margin: 0 auto; display: block; position: relative; top: -38px; }*/
-
 
 #home, #aboutMe, #portfolio, #contact{ width: 100%; }
 #home{
   background:url('../images/3.jpg') 50% 0 no-repeat fixed;
-  /*color: #fff;*/
   height: 520px;
   margin: 0;
   padding: 200px 0 260px 0;
@@ -94,10 +82,8 @@ a:visited {
 }
 #aboutMe{
   background-color: #fff;
-  /*color: #333333;*/
   min-height: 400px;
   margin: 0 auto;
-  /*overflow: hidden;*/
   padding: 200px 0 260px 0;
 }
 #portfolio{
@@ -109,31 +95,9 @@ a:visited {
 }
 #contact{
   background-color: #fff;
-  /*color: #333333;*/
   height: 60px;
   padding: 200px 0;
 }
-
-@keyframes back-change {
-  0%   {background-color: #2a148c;}
-  25%  {background-color: #7cf398; color: black;}
-  50%  {background-color: #2a148c; color: white;}
-  75%  {background-color: #000000;}
-  100%   {background-color: #2a148c;}
-
-}
-
-/*@keyframes imabg {
-0% {background-image: url('../images/art.jpg');}
-50% {background-image: url('http://www.studiocity-macau.com/uploads/images/SC/Entertainment/Batman/batman_share.jpg');}
-100% {background-image: url('../images/art.jpg');}
-}*/
-
-/*#home {
-animation: imabg 10s infinite ease-in-out;
-}*/
-
-
 
 backward {
   display: inline-block;
@@ -142,7 +106,7 @@ backward {
   transform: scale(-1, 1);
 }
 
-.quotesContainer {
+.contentContainer {
   margin-top: -90px;
   text-align: center;
   padding-bottom: 120px;
@@ -159,22 +123,18 @@ backward {
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-
   40% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -190deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -190deg);
     -webkit-animation-timing-function: ease-out;
     animation-timing-function: ease-out;
   }
-
   40% {
     -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -170deg);
     transform: perspective(400px) rotate3d(0, 1, 0, -170deg);
     -webkit-animation-timing-function: ease-in;
     animation-timing-function: ease-in;
   }
-
-
   to {
     -webkit-transform: perspective(400px);
     transform: perspective(400px);
@@ -190,7 +150,6 @@ backward {
   border-radius: 50%;
   color: white;
   animation: flip 3s infinite;
-  /*animation: back-change 30s infinite ease-in-out;*/
 }
 
 .projectContainer {
@@ -204,7 +163,6 @@ backward {
   background: white;
   width: 45%;
   box-shadow: 7px 7px 7px #111111;
-  /*border: 4px solid #2176ff;*/
   border: 15px solid white;
   border-radius: 15px;
   display: inline-block;
@@ -241,7 +199,6 @@ backward {
     transform: translate3d(-100%, 0, 0);
     visibility: visible;
   }
-
   to {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
@@ -282,7 +239,6 @@ span > h4 {
   border-radius: 15px;
 }
 
-
 .contactIcon {
   margin: 0 auto;
   width: 100px;
@@ -296,12 +252,10 @@ span > h4 {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
   }
-
   50% {
     -webkit-transform: scale3d(1.5, 1.5, 1.5);
     transform: scale3d(1.5, 1.5, 1.5);
   }
-
   to {
     -webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);
@@ -312,7 +266,7 @@ span > h4 {
   animation: pulse 2s ease-in-out;
 }
 
-.quotes {
+.info {
   width: 600px;
   text-align: center;
   margin: 0 auto;
