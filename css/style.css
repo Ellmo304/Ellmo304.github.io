@@ -300,11 +300,11 @@ span > h4 {
   padding: 7px;
   border: 3px solid black;
   border-radius: 15px;
-  background-color: rgba(255,255,255,1);
+  background-color: #fff;
 }
 
 #skillz {
-  margin-top: -140px;
+  margin-top: -150px;
   margin-bottom: 50px;
   text-shadow: none;
   color: black;
