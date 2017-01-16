@@ -364,3 +364,12 @@ padding: 7px 10px 36px 12px;
   color: #2176ff;
   background-color: white;
 }
+
+#pHeading {
+  color: #2176ff;
+  text-shadow: none;
+  font-size: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-weight: 900;
+}

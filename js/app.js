@@ -22,13 +22,27 @@ $(function() {
     $(this).children().css('visibility', 'hidden');
   });
 
+  let projectTitle = null;
 
   function showInfo(project) {
+
+    switch (project) {
+      case 'p1': projectTitle = 'Battleships';
+        break;
+      case 'p2': projectTitle = 'Meet in the Middle';
+        break;
+      case 'p3': projectTitle = 'iTrack';
+        break;
+      case 'p4': projectTitle = 'myGarden';
+        break;
+    }
+
     $('.project').css('visibility', 'hidden');
     $('span').css('visibility', 'hidden');
     $('#projectsWindow').prepend(`<div class="infoWindow">
-    <button id="close">X</button></div>`);
-    console.log(project);
+    <button id="close">X</button> <h2 id="pHeading">${projectTitle}</h2> </div>`);
+
+
   }
 
 
