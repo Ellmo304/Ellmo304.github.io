@@ -346,7 +346,22 @@ div.row {
   word-break: break-all;
   overflow: auto;
   text-align: center;
-  color: white;
+  color: black;
+}
+
+.infoWindow > p {
+  width: 800px;
+  margin: 0 auto;
+  word-break: normal;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.infoWindow >img {
+  width: 600px;
+  margin: 0 auto;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 #close {
@@ -367,9 +382,11 @@ padding: 7px 10px 36px 12px;
 
 #pHeading {
   color: #2176ff;
+  text-align: center;
   text-shadow: none;
   font-size: 50px;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: -30px;
   font-weight: 900;
+  padding-left: 45px;
 }
