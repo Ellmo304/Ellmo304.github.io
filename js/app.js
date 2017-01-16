@@ -23,4 +23,38 @@ $(function() {
   });
 
 
+  function showInfo(project) {
+    $('.project').css('visibility', 'hidden');
+    $('span').css('visibility', 'hidden');
+    $('#projectsWindow').prepend(`<div class="infoWindow">
+    <button id="close">X</button></div>`);
+    console.log(project);
+  }
+
+
+
+
+  $( '#p1Info' ).click(function() {
+    showInfo('p1');
+  });
+
+  $( '#p2Info' ).click(function() {
+    showInfo('p2');
+  });
+
+  $( '#p3Info' ).click(function() {
+    showInfo('p3');
+  });
+
+  $( '#p4Info' ).click(function() {
+    showInfo('p4');
+  });
+
+
+  $( '#portfolio' ).on( 'click', 'button', function() {
+    $( '.infoWindow' ).remove();
+    $('.project').css('visibility', 'visible');
+  });
+
+
 });
